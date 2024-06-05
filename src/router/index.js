@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue';
+import Home from '../views/HomePage.vue';
 
 const routes = [
     {
@@ -8,24 +8,24 @@ const routes = [
       component: Home,
       meta: { title: 'Home' }
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/About.vue'),
-      meta: { title: 'About' }
-    },
-    {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: () => import('../views/Portfolio.vue'),
-      meta: { title: 'Portfolio' }
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../views/Contact.vue'),
-      meta: { title: 'Contact' }
-    },
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   component: () => import('../views/AboutPage.vue'),
+    //   meta: { title: 'About' }
+    // },
+    // {
+    //   path: '/portfolio',
+    //   name: 'portfolio',
+    //   component: () => import('../views/PortfolioPage.vue'),
+    //   meta: { title: 'Portfolio' }
+    // },
+    // {
+    //   path: '/contact',
+    //   name: 'contact',
+    //   component: () => import('../views/ContactPage.vue'),
+    //   meta: { title: 'Contact' }
+    // },
   ]
   
   const router = createRouter({
