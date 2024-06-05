@@ -1,4 +1,46 @@
 <template>
+
+  <div class="max-w-7xl mx-auto flex flex-col relative">
+  <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-custom-background bg-opacity-80 py-4">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+      <button @click="redirectToHome" class="flex">
+        <span class="self-center text-xl text-custom-color font-semibold whitespace-nowrap fadein-bot hover:text-white">nishthaDalvi();</span>
+      </button>
+      <div class="flex md:order-2 fadein-bot">
+        <a href="https://github.com/nishthadalvi"><img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github"></a>
+      </div>
+      <div class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1" id="mobile-menu-3">
+        <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+          <li>
+            <router-link to="/"
+              class="fadein-bot text-xl text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0"
+              aria-current="page">Home</router-link>
+          </li>
+          <li>
+            <router-link to="/about"
+              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">About</router-link>
+          </li>
+          <li>
+            <router-link to="/portfolio"
+              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Portfolio</router-link>
+          </li>
+          <li>
+          <router-link to="/contact"
+              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Contact</router-link>
+          </li>
+          <li>
+          <router-link to="/coffee"
+              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Coffee Recs</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="md:mt-[100px]">
+    <router-view />
+  </div>
+
   <main class="flex flex-col md:flex-row gap-8 items-center justify-center min-h-screen bg-custom-background p-4">
     <div class="space-y-2 text-center md:text-center px-10">
       <p class="text-2xl text-custom-color">Hello World, I'm</p>
@@ -11,9 +53,11 @@
       <p class="text-xl text-white fade-in-from-left">Welcome to my personal website. <span class="wave">👋🏼</span></p>
     </div>
     <div class="flex justify-center fadein-right">
-      <img alt="profile-picture" fetchpriority="high" class="profile-picture" :src="'/img/profile-picture.png'" />
+      <img alt="profile-picture" fetchpriority="high" class="profile-picture" :src='"/img/profile-picture.png"' />
     </div>
   </main>
+
+  </div>
 </template>
 
 <script>
@@ -77,7 +121,7 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   height: 100%;
-  background: hsl(0, 0%, 7%);
+  background: rgb(236, 224, 209);
 }
 
 .bg-custom-background {
