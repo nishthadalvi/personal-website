@@ -8,12 +8,12 @@ const routes = [
       component: Home,
       meta: { title: 'Home' }
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () => import('../views/AboutPage.vue'),
-    //   meta: { title: 'About' }
-    // },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutPage.vue'),
+      meta: { title: 'About' }
+    },
     // {
     //   path: '/portfolio',
     //   name: 'portfolio',

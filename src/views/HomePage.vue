@@ -129,7 +129,7 @@ body, html {
 }
 
 .text-custom-color {
-  color: rgb(150, 114, 89);
+  color: rgb(86 53 23);
 }
 
 body {
