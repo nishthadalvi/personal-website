@@ -150,10 +150,6 @@ export default {
               class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Portfolio</router-link>
           </li>
           <li>
-          <router-link to="/contact"
-              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Contact</router-link>
-          </li>
-          <li>
           <router-link to="/coffee"
               class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Coffee Recs</router-link>
           </li>
@@ -171,7 +167,7 @@ export default {
         <header>
           <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
             Spilling the Beans... About Me!&nbsp;
-            <div class="h-[1px] w-32 bg-[#e5ceb7] md:w-96 aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="600"></div>
+            <div class="h-[1px] w-32 bg-[#563517] md:w-96 aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="600"></div>
           </div>
         </header>
         <section class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center">

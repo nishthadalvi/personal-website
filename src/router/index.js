@@ -14,18 +14,18 @@ const routes = [
       component: () => import('../views/AboutPage.vue'),
       meta: { title: 'About' }
     },
-    // {
-    //   path: '/portfolio',
-    //   name: 'portfolio',
-    //   component: () => import('../views/PortfolioPage.vue'),
-    //   meta: { title: 'Portfolio' }
-    // },
-    // {
-    //   path: '/contact',
-    //   name: 'contact',
-    //   component: () => import('../views/ContactPage.vue'),
-    //   meta: { title: 'Contact' }
-    // },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      component: () => import('../views/PortfolioPage.vue'),
+      meta: { title: 'Portfolio' }
+    },
+    {
+      path: '/coffee',
+      name: 'coffee',
+      component: () => import('../views/CoffeePage.vue'),
+      meta: { title: 'Coffee' }
+    }
   ]
   
   const router = createRouter({
