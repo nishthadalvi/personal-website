@@ -149,10 +149,6 @@ export default {
             <router-link to="/portfolio"
               class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Portfolio</router-link>
           </li>
-          <li>
-          <router-link to="/coffee"
-              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Coffee Recs</router-link>
-          </li>
         </ul>
       </div>
     </div>
@@ -178,9 +174,8 @@ export default {
           <div class="md:w-12/12">
             <p class="mb-3 md:mb-7 fadein-left fadeins-1">
               Hi! My name is Nishtha Dalvi, and I'm a senior at UT Austin, pursuing a double major in Electrical and Computer Engineering Honors 
-              with a focus on Software Engineering, and Mathematics. Additionally, I am minoring in Business Administration. I have interned at 
-              Boeing on the 737 line, where I programmed test carts for functional plane tests, and this summer, I am a Software Engineering intern
-              at Cisco on the CX Cloud Risk Mitigation Check team.
+              with a focus on Software Engineering, and Mathematics. Additionally, I am minoring in Business Administration. This summer, I am a Software Engineering intern
+              at Cisco on the CX Cloud Risk Mitigation Check team. Last year, I interned at Boeing on the 737 line, where I programmed test carts for functional plane tests.
             </p>
             <p class="mb-3 fadein-left fadeins-2">
               At UT Austin, I serve as the Corporate and Conference Chair for UT Women in ECE. I'm deeply passionate about promoting women in tech 
@@ -188,6 +183,12 @@ export default {
               at any stage of their careers, and I'm dedicated to creating opportunities and supportive environments for underrepresented groups in STEM.
               Beyond academics and work, I enjoy cooking, landscape photography, and exploring unique coffee and matcha spots. I'm always eager to connect 
               and chat, so feel free to reach out!
+            </p>
+            <p class="mb-3 fadein-left fadeins-3">
+              Email: nishthadalvi@utexas.edu
+            </p>
+            <p class="mb-3 fadein-left fadeins-4">
+              Phone: (832) 242-8456
             </p>
           </div>
         </section>

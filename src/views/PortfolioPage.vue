@@ -7,47 +7,41 @@ export default {
         {
           id: 1,
           name: 'Personal Website',
-          imageUrl: 'portfolio_v2',
-          status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
+          status: 'My personal website, I created this website to display my profile, skills and projects',
           tech: 'VueJS 3, Tailwind',
-          github: 'https://github.com/rakha-elctrnx/Portofolio-v2',
-          demo: 'https://bagasrakha.netlify.app/'
+          github: 'https://github.com/nishthadalvi/personal-website',
+          demo: 'null'
         },
         {
           id: 2,
-          name: 'Sahabat Muslim',
-          imageUrl: 'sahabatmuslim',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
-          tech: 'VueJS 3, Tailwind',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          name: 'HaaS System',
+          imageUrl: '',
+          status: 'A web app HaaS system that enables secure account management, project creation/joining, hardware check-in/out, and resource status viewing.',
+          tech: 'React, Flask, and MongoDB',
+          github: 'https://github.com/nishthadalvi/ECE461L_Project',
+          demo: 'null'
         },
         {
           id: 3,
-          name: 'SISTEKDES',
-          imageUrl: 'sistekdes',
-          status: 'Sistem Informasi dan Teknologi Desa, a web application to assist village government work in administration, population data management, community services, etc.',
-          tech: 'Laravel 9, Bootstrap',
+          name: 'Parallel GPU-based Image Processing Algorithms',
+          imageUrl: '',
+          status: 'Developed and optimized parallel GPU-based algorithms using CUDA for image processing, including Mean Blur, Gaussian Blue, and Sobel Edge Detection',
+          tech: 'CUDA',
           github: 'null',
           demo: 'null'
         },
         {
           id: 4,
-          name: 'Bumdesma',
-          imageUrl: 'bumdesma',
-          status: 'a web application used by village-owned enterprises at the sub-district level to make it easier for them in terms of accounting that is equipped with a microfinance balance.',
-          tech: 'Laravel 8, Bootstrap',
-          github: 'null',
+          name: 'eHills',
+          status: 'An auction platform where client threads can simultaneously log in, bid on, and buy items',
+          tech: 'Java, MongoDB, Firebase, Socket Networking, Multithreading',
+          github: '',
           demo: 'null'
+
         },
         {
           id: 5,
-          name: 'SP2SE',
-          imageUrl: 'sp2se',
-          status: 'Sistem Percepatan Pelayanan Surat Elektronik, A web application to manage letters in the village.',
-          tech: 'Codeigniter 3, Bootstrap',
-          github: 'null',
-          demo: 'null'
+          name: 'Coming soon...',
         }
       ]
     };
@@ -56,7 +50,7 @@ export default {
 </script>
 <template>
 <div class="max-w-7xl mx-auto flex flex-col relative"></div>
-<nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-custom-background bg-opacity-80 py-4">
+<nav class="fixed top-0 z-[98] w-full backdrop-blur-md bg-custom-background bg-opacity-80 py-4">
     <div class="container mx-auto flex flex-wrap items-center justify-between">
       <button class="flex">
         <span class="self-center text-xl text-custom-color font-semibold whitespace-nowrap fadein-bot hover:text-white">nishthaDalvi();</span>
@@ -79,10 +73,6 @@ export default {
             <router-link to="/portfolio"
               class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Portfolio</router-link>
           </li>
-          <li>
-          <router-link to="/coffee"
-              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Coffee Recs</router-link>
-          </li>
         </ul>
       </div>
     </div>
@@ -92,14 +82,13 @@ export default {
     <router-view />
   </div>
 
-  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
+  <div class="px-5 py-5 md:px-12 md:py-10 text-left mx-3">
     <article data-page="about">
       <header>
         <div
-          class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
-          <!-- <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"></div> -->
+          class="text-2xl font-bold text-[#563517] mb-10 fadein-bot title-section flex items-center justify-center flex-col">
           <h4>Past Project Experience</h4>
-          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
+          <h4 class="text-base text-white font-normal text-transparent bg-clip-text">
             Explore the projects I've worked on so far</h4>
         </div>
       </header>
@@ -108,17 +97,17 @@ export default {
           <div class="grid grid-cols-1 gap-4 pb-32 md:grid-cols-3 md:gap-3 xl:grid-cols-3 xl:gap-3 2xl:gap-5 fade-zoom-in">
             <div v-for="item in items" :key="item.id">
               <div
-                class="item-card flex flex-col items-center gap-2 rounded bg-[#1e1e1f] hover:bg-[#282828] border border-[#383838] rounded-xl text-amber-50 md:gap-3 px-5 py-5 lg:px-5 ">
+                class="item-card flex flex-col items-center gap-2 rounded bg-[#dbc1ac] hover:bg-[#dbc1ac] border border-[#383838] rounded-xl text-[#563517] md:gap-3 px-5 py-5 lg:px-5 ">
                 <div class="flex h-12 w-12 items-center justify-center p-0 h-full w-full lg:p-0 zoom-in">
-                  <img alt="HTML" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl"
-                    :src="'/img/portfolio-' + item.imageUrl + '.png'">
+                  <!-- <img alt="HTML" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl"
+                    :src="'/img/portfolio-' + item.imageUrl + '.png'"> -->
                 </div>
                 <div class="w-full flex flex-col gap-2 items-center text-sm md:text-base lg:text-lg">
                   <div class="title-text font-medium text-secondary">{{ item.name }}
                   </div>
-                  <div class="w-full text-left text-[10px] text-[#c1c1c1] md:text-xs lg:text-sm">
+                  <div class="w-full text-left text-[10px] text-white md:text-xs lg:text-sm">
                     {{ item.status }}</div>
-                  <div class="w-full mt-4 text-normal text-sm text-left text-amber-200">
+                  <div class="w-full mt-4 text-normal text-sm text-left text-[#9c6f44]">
                     {{ item.tech }}
                   </div>
                   <div class="w-full flex justify-end">
@@ -172,7 +161,10 @@ svg:hover{
   }
 }
 
-/* Menggunakan animasi pada elemen yang diinginkan */
+.text-custom-color {
+  color: rgb(86 53 23);
+}
+
 .fade-zoom-in {
   animation: fadeZoomIn 1s ease-in-out;
 }

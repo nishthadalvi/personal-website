@@ -20,12 +20,6 @@ const routes = [
       component: () => import('../views/PortfolioPage.vue'),
       meta: { title: 'Portfolio' }
     },
-    {
-      path: '/coffee',
-      name: 'coffee',
-      component: () => import('../views/CoffeePage.vue'),
-      meta: { title: 'Coffee' }
-    }
   ]
   
   const router = createRouter({

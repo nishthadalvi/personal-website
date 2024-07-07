@@ -24,10 +24,6 @@
             <router-link to="/portfolio"
               class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Portfolio</router-link>
           </li>
-          <li>
-          <router-link to="/coffee"
-              class="fadein-bot text-xl fadein-1 text-custom-color md:border-0 block pl-3 pr-4 py-2 md:hover:text-white md:p-0">Coffee Recs</router-link>
-          </li>
         </ul>
       </div>
     </div>
