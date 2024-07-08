@@ -45,7 +45,7 @@
       <p class="text-xl text-white fade-in-from-left">Welcome to my personal website. <span class="wave">👋🏼</span></p>
     </div>
     <div class="flex justify-center fadein-right">
-      <img alt="profile-picture" fetchpriority="high" class="profile-picture" :src='"/img/profile-picture.png"' />
+      <img fetchpriority="high" class="profile-picture" src="/img/profile-picture.png" />
     </div>
   </main>
 

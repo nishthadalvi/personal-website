@@ -48,6 +48,7 @@ export default {
   }
 }
 </script>
+
 <template>
 <div class="max-w-7xl mx-auto flex flex-col relative"></div>
 <nav class="fixed top-0 z-[98] w-full backdrop-blur-md bg-custom-background bg-opacity-80 py-4">
